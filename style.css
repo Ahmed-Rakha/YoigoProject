@@ -869,8 +869,7 @@ main {
     flex-direction: column;
     row-gap: 1rem;
   }
-  .nav-sub2-main-container {
-  }
+
   .check-coverage span {
     font-size: 1.3rem;
     min-width: 10rem;

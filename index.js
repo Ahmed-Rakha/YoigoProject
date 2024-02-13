@@ -166,7 +166,7 @@ arrow.onclick = function () {
     arrow.classList.add('arrow-up');
     arrow.setAttribute('src', `${arrowUpUrl}`);
     box.style.cssText = `
-    height:15.5rem; box-shadow: 0px 3px 2px 2px lightgray; border:none; transition: height .8s;
+    height:14.9rem; box-shadow: 0px 3px 2px 2px lightgray; border:none; transition: height .8s;
     `;
   } else {
     arrow.classList.remove('arrow-up');

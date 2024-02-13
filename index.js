@@ -202,19 +202,30 @@ disabledHeader.forEach((ele) => {
   });
 });
 
-// arrowFooter.forEach((arrow) => {
-//   arrow.addEventListener('click', function (event) {
-//     console.log(event);
-//     if (arrow.classList.contains('arrow-down')) {
-//       arrow.classList.remove('arrow-down');
-//       arrow.classList.add('arrow-up');
-//       arrow.setAttribute('src', `${arrowUpUrl}`);
-//       ele.style.cssText = 'height:30vh; transition: height 0.7s';
-//     } else {
-//       arrow.classList.remove('arrow-up');
-//       arrow.classList.add('arrow-down');
-//       arrow.setAttribute('src', `${arrowDownUrl}`);
-//       ele.style.cssText = 'height:4.4vh; transition: height 0.7s';
-//     }
-//   });
-// });
+// hambergur menue
+
+const closeMenue = document.querySelector(
+  '.white-section > div:nth-child(1) .close-menu'
+);
+const hamburgerSection = document.querySelector(
+  '.hamburger-menu-main-container'
+);
+const MainSection = document.querySelector('main');
+const navSection = document.querySelector('nav');
+const hambergurIcon = document.querySelector('.hambourger-icon');
+const verMas = document.querySelector('.ver-mas-icon');
+closeMenue.addEventListener('click', function () {
+  hamburgerSection.style.display = 'none';
+  MainSection.style.display = 'inline-block';
+  navSection.style.display = 'inline-block';
+});
+
+hambergurIcon.addEventListener('click', handleHambourgerMenue);
+
+verMas.addEventListener('click', handleHambourgerMenue);
+
+function handleHambourgerMenue() {
+  hamburgerSection.style.display = 'inline-block';
+  MainSection.style.display = 'none';
+  navSection.style.display = 'none';
+}

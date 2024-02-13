@@ -160,7 +160,7 @@ main {
 }
 .banner-container {
   height: 60vh;
-  background: var(--section-bg-color) url(/assets/images/main-section-img.webp)
+  background: var(--section-bg-color) url('./assets/images/mainSectionImg.webp')
     no-repeat center/contain;
   position: relative;
 }
@@ -594,7 +594,7 @@ main {
   margin: auto;
 }
 .D-Samsung-S24-img {
-  background: url('/assets/images/D_Samsung_S24.webp') no-repeat center/contain;
+  background: url('./assets/images/DSamsungS24.webp') no-repeat center/contain;
   height: 300px;
   width: 100%;
   cursor: pointer;

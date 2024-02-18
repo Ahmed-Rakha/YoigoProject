@@ -115,6 +115,10 @@ nav {
   width: fit-content;
   flex: 1;
   text-align: center;
+  /* border: solid 1px red; */
+}
+.nav-sub2-secondary-container .logo img {
+  width: 120px;
 }
 .nav-sub2-secondary-container button {
   border: solid 1px var(--nav-color);
@@ -782,7 +786,6 @@ main {
   display: none;
 }
 
-/* media query */
 .hamburger-menu-main-container {
   width: 100vw;
   height: 100vh;
@@ -825,6 +828,7 @@ main {
   margin-bottom: 2rem;
   cursor: pointer;
 }
+
 .foshia-section {
   height: 30%;
   padding: 2rem;
@@ -844,6 +848,8 @@ main {
   padding-top: 0.5rem;
   cursor: pointer;
 }
+/* media query */
+
 @media (max-width: 576px) {
   .nav-left-side-container {
     display: none;
@@ -873,6 +879,10 @@ main {
     display: none;
   }
   .logo svg {
+    width: 85px;
+    height: 36px;
+  }
+  .logo img {
     width: 85px;
     height: 36px;
   }
